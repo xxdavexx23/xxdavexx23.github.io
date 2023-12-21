@@ -9,7 +9,8 @@ export default function Home() {
       <h1> HELLO </h1>
       <button type="button" onClick={() => router.push('/Next')}>
       Dashboard
-    </button>
+      </button>
+      <h1>what?</h1>
     </main>
   )
 
