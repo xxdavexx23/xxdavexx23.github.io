@@ -4,30 +4,94 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 6rem; /* Assuming 24px * 4 = 96px = 6rem */
-  min-height: 100vh; /* 100% of the viewport height */
+  padding: 6rem;
+  /* Assuming 24px * 4 = 96px = 6rem */
+  min-height: 100vh;
+  /* 100% of the viewport height */
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 0, 255, 255;
+  --foreground-rgb: 10, 25, 47;
+  /* Dark Blue */
+  --background-start-rgb: 173, 216, 230;
+  /* Light Blue */
+  --background-end-rgb: 0, 128, 128;
+  /* Teal */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* White for dark mode */
+    --background-start-rgb: 25, 50, 75;
+    /* Darker Blue for dark mode */
+    --background-end-rgb: 0, 51, 51;
+    /* Dark Teal for dark mode */
   }
 }
 
+html {
+  background: linear-gradient(to top,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb)));
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+  /* Full viewport height */
+  margin: 0;
+  /* Remove default margin */
+  background: linear-gradient(to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb)));
+  /* Other body styles... */
+}
+
+footer {
+  background-color: rgb(var(--background-end-rgb));
+  /* Bottom color */
+  min-height: 50px;
+  /* Or more, adjust as needed */
+  /* Other footer styles... */
+}
+
+
+
+.floating-nav {
+  position: fixed;
+  /* Keep it fixed during scrolling */
+  top: 50;
+  /* Align to the top of the viewport */
+  left: 50;
+  /* Align to the left of the viewport */
+  width: 50%;
+  /* Stretch across the full viewport width */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Semi-transparent or any color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Optional: Adds a shadow for depth */
+  z-index: 1000;
+  /* Ensure it's above other content */
+}
+
+.floating-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Align navigation items in a row */
+  justify-content: center;
+  /* Center navigation items */
+}
+
+.floating-nav li {
+  margin: 0 15px;
+  /* Spacing between navigation items */
+}
+
+.floating-nav a {
+  text-decoration: none;
+  color: var(--foreground-rgb);
+  /* Use your defined foreground color */
+  font-weight: bold;
 }
