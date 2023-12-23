@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className={inter.className}>
-      <h1>HELLO, I'm in Layout</h1>
+      <h1>HELLO, Im in Layout</h1>
       {children}
     </div>
   );
