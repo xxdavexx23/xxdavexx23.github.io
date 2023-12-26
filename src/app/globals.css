@@ -31,12 +31,15 @@
 }
 
 html {
+
   background: linear-gradient(to top,
       rgb(var(--background-start-rgb)),
       rgb(var(--background-end-rgb)));
 }
 
+
 body {
+
   min-height: 100vh;
   /* Full viewport height */
   margin: 0;
@@ -47,14 +50,13 @@ body {
   /* Other body styles... */
 }
 
-footer {
-  background-color: rgb(var(--background-end-rgb));
-  /* Bottom color */
-  min-height: 50px;
-  /* Or more, adjust as needed */
-  /* Other footer styles... */
+h1 {
+  margin: 0;
+  /* Removes default margin */
+  font-size: rem;
+  /* Sets a specific font size */
+  /* Other styles as needed */
 }
-
 
 
 .floating-nav {
