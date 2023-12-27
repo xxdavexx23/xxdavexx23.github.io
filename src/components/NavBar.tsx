@@ -1,8 +1,10 @@
+'use client'
 import React from 'react'
 import styles from './NavBar.module.css'
 import Link from 'next/link'
 import Logo from './Logo'
 import styles2 from './Logo.module.css'
+import { usePathname } from 'next/navigation'
 
 
 interface CustomLinkProps {
@@ -12,10 +14,11 @@ interface CustomLinkProps {
 }
 
 const CustomLink: React.FC<CustomLinkProps> = ({ href, title, className = "" }) => {
+    const pathname = usePathname();
     return (
         <Link href={href} className={className}>
             {title}
-            <span className={styles.span}> &nbsp;</span>
+            <span className={pathname == href ? styles.span : styles.span_absent}> &nbsp;</span>
         </Link>
     );
 };

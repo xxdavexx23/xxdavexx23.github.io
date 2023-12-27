@@ -27,6 +27,21 @@
     background-color: black;
     /* Replace with your dark color */
     position: absolute;
+    transition: width 0.3s ease-in;
+    transition-duration: 300ms;
+    left: 0;
+    bottom: -2px;
+}
+
+.span_absent {
+    height: 1px;
+    display: inline;
+    width: 0%;
+    background-color: black;
+    /* Replace with your dark color */
+    position: absolute;
+    transition: width 0.3s ease-in;
+    transition-duration: 300ms;
     left: 0;
     bottom: -2px;
 }
