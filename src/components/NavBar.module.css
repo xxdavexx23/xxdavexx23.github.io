@@ -1,47 +1,46 @@
+/* Adjust the path to your font or use a web-safe font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
 .navbar {
     width: 100%;
-    padding-left: 128px;
-    padding-right: 128px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 128px;
     display: flex;
     align-items: center;
-    /* Vertical centering */
     justify-content: space-between;
-    /* Horizontal centering */
+    border-bottom: 1px solid #dddddd;
+    background-color: #ffffff; 
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navbar a {
-    color: black;
+    color: #333333; 
     text-decoration: none;
-    font-size: medium;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 600; 
     margin-right: 32px;
     position: relative;
+    transition: color 0.3s;
 }
 
-.span {
-    height: 1px;
-    display: inline;
-    width: 100%;
-    background-color: black;
-    /* Replace with your dark color */
-    position: absolute;
+.navbar a:last-child {
+    margin-right: 0;
+}
+
+.navbar a:hover,
+.navbar a.active { 
+    color: #007bff; 
     transition: width 0.3s ease-in;
-    transition-duration: 300ms;
-    left: 0;
-    bottom: -2px;
 }
 
-.span_absent {
-    height: 1px;
-    display: inline;
+.span, .span_absent {
+    height: 2px; 
+    position: absolute;
+    left: 0;
+    bottom: -4px;
     width: 0%;
-    background-color: black;
-    /* Replace with your dark color */
-    position: absolute;
-    transition: width 0.3s ease-in;
-    transition-duration: 300ms;
-    left: 0;
-    bottom: -2px;
+}
+
+.navbar a:hover .span,
+.navbar a.active .span { 
+    width: 100%;
 }
