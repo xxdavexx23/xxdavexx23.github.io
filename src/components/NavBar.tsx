@@ -35,7 +35,9 @@ const NavBar: React.FC = () => {
                 <CustomLink href="/projects" title="Projects" />
                 <CustomLink href="/articles" title="Articles" />
             </nav>
-            <nav> <TwitterIcon /> </nav>
+            <nav> <TwitterIcon />
+                <LinkedInIcon />
+            </nav>
             <div className={styles2.logo}><Logo /></div>
         </header>
     )
