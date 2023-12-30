@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Logo from './Logo';
 import styles2 from './Logo.module.css';
 import { usePathname } from 'next/navigation';
+import { TwitterIcon, LinkedInIcon } from './Icons';
 
 interface CustomLinkProps {
     href: string;
@@ -34,6 +35,7 @@ const NavBar: React.FC = () => {
                 <CustomLink href="/projects" title="Projects" />
                 <CustomLink href="/articles" title="Articles" />
             </nav>
+            <nav> <TwitterIcon /> </nav>
             <div className={styles2.logo}><Logo /></div>
         </header>
     )
