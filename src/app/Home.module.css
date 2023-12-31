@@ -1,119 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700&display=swap');
+
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
 
 .introSection {
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: center; 
-    text-align: left; 
-    background-color: #F5DF4E;
-    margin-bottom: 50%;
-    width: 100%;
-    gap: 20%;
-    min-height: 100vh;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background-color: #F5DF4E;
+  margin-bottom: 0%;
+  width: 100%;
+  gap: 20%;
+  min-height: 100vh;
+
 }
 
 
 .avatar {
 
-    border-radius: 50%;
-    border: 15px solid #fff;
-    /** image is not a perfect circle. This will hide the corners */
-    overflow: hidden;
-    /** give it a 3D look with an big shadow */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    margin-top: -8%;
-    
-    
+  border-radius: 50%;
+  border: 15px solid #fff;
+  /** image is not a perfect circle. This will hide the corners */
+  overflow: hidden;
+  /** give it a 3D look with an big shadow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  margin-top: -8%;
+
+
 }
 
 .title {
-    color: #212529;
-    font-size: 3rem;
-    font-weight: 350;
-    font-family: 'Work Sans', sans-serif;
+  color: #212529;
+  font-size: 3rem;
+  font-weight: 350;
+  font-family: 'Work Sans', sans-serif;
 
-    
+
 }
 
 
 .subtitle {
-    color: #212529;
-    font-size: 1.5rem;
-    max-width: 600px;
-    font-family: 'Work Sans', sans-serif;
-    font-family: 350;
+  color: #212529;
+  font-size: 1.5rem;
+  max-width: 600px;
+  font-family: 'Work Sans', sans-serif;
+  font-family: 350;
 }
 
 
 
 @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
   }
-  
-  .typing {
-    border-right: 10px solid;
-    animation: blink 1s step-end infinite;
-    font-size: 6rem;
-    font-weight: 600;
-    font-family: 'Work Sans', sans-serif;
-  }
-  
+}
 
-  .contactButton {
-    background-color: transparent;
-    border: none;
-    color: #212529;
-    font-size: 1rem;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 20px;
-    position: relative;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-    background-color: #212529;
-    color: #fff;
-    padding: 10px 30px;
-  }
-  
-  .contactButton::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: #fff;
-    transition: width 0.3s ease;
-    -webkit-transition: width 0.3s ease;
-    -moz-transition: width 0.3s ease;
-    -o-transition: width 0.3s ease;
-  }
-  
-  .contactButton:hover::after {
-    width: 100%;
-    left: 0;
-    background: #fff;
-  }
-  
+.typing {
+  border-right: 10px solid;
+  animation: blink 1s step-end infinite;
+  font-size: 6rem;
+  font-weight: 600;
+  font-family: 'Work Sans', sans-serif;
+}
 
-  /* Apply the shift to the title, subtitle, and button */
-.title, .subtitle, .contactButton {
-    transform: translateY(-50%);
-  }
-  
+
+.contactButton {
+  background-color: transparent;
+  border: none;
+  color: #212529;
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #212529;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+.contactButton::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+}
+
+.contactButton:hover::after {
+  width: 100%;
+  left: 0;
+  background: #fff;
+}
+
+
+/* Apply the shift to the title, subtitle, and button */
+.title,
+.subtitle,
+.contactButton {
+  transform: translateY(-50%);
+}

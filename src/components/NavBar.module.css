@@ -8,15 +8,15 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #dddddd;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
 
 .navbar a {
-    color: #333333; 
+    color: #333333;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600; 
+    font-size: 100%;
+    font-weight: 600;
     margin-right: 32px;
     position: relative;
     transition: color 0.3s;
@@ -27,13 +27,14 @@
 }
 
 .navbar a:hover,
-.navbar a.active { 
-    color: #F5DF4E; 
+.navbar a.active {
+    color: #F5DF4E;
     transition: width 0.3s ease-in;
 }
 
-.span, .span_absent {
-    height: 2px; 
+.span,
+.span_absent {
+    height: 2px;
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -41,6 +42,6 @@
 }
 
 .navbar a:hover .span,
-.navbar a.active .span { 
+.navbar a.active .span {
     width: 100%;
 }

@@ -5,7 +5,7 @@ import styles from './Home.module.css';
 
 export default function Home() {
   const [title, setTitle] = useState('');
-  const titles = ['THINKER',  'DESIGNER', 'ENGINEER'];
+  const titles = ['THINKER', 'DESIGNER', 'ENGINEER'];
 
   const currentTitleIndex = useRef(0);
   const charIndex = useRef(0);
@@ -46,7 +46,7 @@ export default function Home() {
     <main className={styles.container}>
       <section className={styles.introSection}>
         <div className="flex flex-col justify-center">
-          <h1 className={styles.title}>HI THERE, I AM DAVID! <br/> <span className={styles.typing}>{title}</span></h1>
+          <h1 className={styles.title}>HI THERE, I AM DAVID! <br /> <span className={styles.typing}>{title}</span></h1>
           <p className={styles.subtitle}>
             based in Orlando, FL
           </p>
@@ -55,6 +55,15 @@ export default function Home() {
         <div className={styles.avatar}>
           <SquareAvatar />
         </div>
+      </section>
+      <section id="about">
+        <h1> Hello </h1>
+      </section>
+      <section id="projects">
+        Hello
+      </section>
+      <section id="articles">
+        Hello
       </section>
     </main>
   );
