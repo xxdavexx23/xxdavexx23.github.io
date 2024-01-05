@@ -90,13 +90,13 @@ export default function Home() {
               </h1>
               <p className={styles.aboutText}>
                 <br />
-                I'm a dedicated software engineer at Northrop, specializing in
+                I&apos;m a dedicated software engineer at Northrop, specializing in
                 Full Stack Development and Software Testing and Engineering. My
-                journey includes obtaining a master's degree in Electrical
+                journey includes obtaining a master&apos;s degree in Electrical
                 Engineering from UCF, equipping me with a wealth of knowledge
                 and expertise. I am committed to developing innovative solutions
                 and delivering high-quality software that not only meets but
-                exceeds client expectations. Let's collaborate and bring your
+                exceeds client expectations. Let&apos;s collaborate and bring your
                 ideas to life together.
               </p>
             </div>
