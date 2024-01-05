@@ -118,11 +118,6 @@ export default function Home() {
               <span className={styles.detail}>david.coh19@gmail.com</span>
             </div>
             <div className={styles.detailItem}>
-              <span className={styles.detailTitle}>Date of birth:</span>
-              <br />
-              <span className={styles.detail}>30 November, 1998</span>
-            </div>
-            <div className={styles.detailItem}>
               <span className={styles.detailTitle}>From:</span>
               <br />
               <span className={styles.detail}>Fort Lauderdale, USA.</span>
