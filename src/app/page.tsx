@@ -85,7 +85,7 @@ export default function Home() {
           <div className={styles.aboutBody}>
             <div className={styles.aboutMe}>
               <h1 className={styles.aboutTitle}>
-                Hi, I'm{" "}
+                Hi, I&apos;m{" "}
                 <span className={styles.nameHighlight}>David Cohen</span>
               </h1>
               <p className={styles.aboutText}>
