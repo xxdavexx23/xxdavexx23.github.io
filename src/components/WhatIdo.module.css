@@ -1,0 +1,69 @@
+.whatIdoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #F8F9FA; /* Assuming a white background */
+  color: #212529;
+  font-family: "Work Sans", sans-serif;
+}
+
+.whatIdoHeader {
+  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatIdoHeading {
+  font-size: 2.5rem;
+  font-weight: 600; /* Bold font weight for the heading */
+  margin-bottom: 10px;
+  color: #212529; /* Heading color */
+}
+
+.whatIdoSubHeading {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #212529; /* Heading color */
+  background-color: #f5df4e;
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+    font-family: "Work Sans", sans-serif;
+    padding: 0 10%;
+  }
+  
+  .serviceItem {
+    text-align: center;
+  }
+  
+  .serviceIcon {
+    margin-bottom: 20px;
+
+    fill: #f5df4e;
+  }
+  
+  .serviceTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600; /* Assuming a semi-bold weight for titles */
+  }
+  
+  .serviceDescription {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400; /* Normal font weight for descriptions */
+  }
+  
