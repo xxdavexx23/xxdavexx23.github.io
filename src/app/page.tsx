@@ -3,9 +3,9 @@ import React, { useState, useEffect, useRef } from "react";
 import { SquareAvatar } from "@/components/Avatar";
 import { AboutMeSection } from "@/components/AboutmeSection";
 import { WhatIdo } from "@/components/WhatIdo";
-
 import styles from "./Home.module.css";
-
+import { ContactMe } from '@/components/ContactMe';
+import { Footer } from '@/components/Footer';
 export default function Home() {
   const [title, setTitle] = useState("");
   const titles = ["THINKER", "DESIGNER", "ENGINEER"];
@@ -81,7 +81,8 @@ export default function Home() {
 
       <AboutMeSection />
       <WhatIdo />
-      
+      <ContactMe />
+      <Footer />      
     </main>
   );
 }

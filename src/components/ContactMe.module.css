@@ -1,0 +1,117 @@
+.contactSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 120px;
+    background-color: #F5DF4E; 
+    color: #333; 
+    font-family: "Work Sans", sans-serif;
+  }
+  
+  .leftColumn {
+    max-width: 50%;
+  }
+  
+  .rightColumn {
+    max-width: 40%;
+  }
+  
+  .header {
+    font-size: 48px; 
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .paragraph {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 30apx;
+  }
+  
+  .contactInfo {
+    margin-top: 40px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+  
+  .contactInfo strong {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .inputField,
+  .textAreaField {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #333; 
+    background-color: transparent;
+    font-size: 18px;
+    font-family: "Consolas", monospace;
+  }
+  
+  .textAreaField {
+    min-height: 120px; 
+    resize: vertical;
+  }
+  
+  .sendButton {
+    background-color: #333; 
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block; 
+    position: relative;
+    transition: background-color 0.3s ease;
+    font-family: "Work Sans", sans-serif;
+    box-shadow: 0 4px 0 #00000033;
+  }
+  
+  .sendButton::after {
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+  }
+  
+  .sendButton:hover {
+    background-color: #555; 
+  }
+  
+  /* Social media icons styles */
+  .socialIcons {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  
+  .socialIcon {
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .gitHubIcon {
+    background-image: url('../assets/github-mark.png');
+  }
+  
+  
+  .linkedInIcon {
+    background-image: url('../assets/LI-In-Bug.png');
+    align-self: center;
+  }
+  
+  .twitterIcon {
+    background-image: url('../assets/logo-black.png');
+    width: 35px;
+    height: 35px;
+    align-self: center;
+  }
