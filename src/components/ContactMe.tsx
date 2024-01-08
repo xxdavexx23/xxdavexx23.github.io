@@ -5,7 +5,7 @@ export const ContactMe = () => {
   return (
     <div className={styles.contactSection}>
       <div className={styles.leftColumn}>
-        <h1 className={styles.header}>Let's get in touch</h1>
+        <h1 className={styles.header}>Let&apos;s Talk</h1>
         <p className={styles.paragraph}>
           I enjoy discussing new projects and design challenges. Please share as much info, as
           possible so we can get the most out of our first catch-up.
